@@ -27,7 +27,13 @@
  }
 
 .card {
-  background-color: rgb(226, 211, 124);
+  background-color: rgb(228, 206, 80);
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase size by 5% */
+  background-color: rgb(234, 202, 20);
 }
 
 body {
@@ -86,3 +92,5 @@ body {
  .custom-modal .modal-dialog {
       max-width: 450px; 
 }
+
+
