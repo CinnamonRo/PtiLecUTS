@@ -1,9 +1,63 @@
+/* Home */
 .navbar {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #dee2e6; 
+  border-bottom: 1px solid #e9f3e8; 
   font-weight: bold; 
   padding: 10px 0; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-custom {
+  background-color: #86a788;
+}
+
+.btn-custom {
+  background-color:#b2c8bb;
+}
+
+body {
+  background-color:#b2c8bb; 
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#bungkusInputanTable {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding: 40px;
+  height: 100%;
+}
+
+.form-floating input[type=text] {
+    border-radius: 6px;
+    border-color: #ced4da; 
+}
+
+.modal-header {
+   background-color: #b2c8bb; 
+   color: #ffffff; 
+   border-bottom: none;
+}
+ 
+.modal-footer .btn-secondary {
+  background-color: #6c757d; 
+}
+  
+.modal-body, .modal-content {
+  background-color: #ffffff; 
+}
+  
+.modal-body p {
+  color: #212529; 
+}
+
+.modal-body, .modal-content {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+  
+.custom-modal .modal-dialog {
+    max-width: 450px; 
 }
 
 .modal-content {
@@ -14,29 +68,17 @@
 .modal.show .modal-content {
   opacity: 1;
 }
-
-.nav-link {
-    color: #495057;
-}
-
-.nav-link:hover {
-    color: rgb(167, 218, 235); 
-}   
-
-#example {
-    border-spacing: 0 10px;
-    border: 1px solid #ddd;
-}
   
 #example tr:hover {
-    background-color: rgb(167, 218, 235);
+    background-color: #e9f3e8;
 }
   
 #example th {
-    background-color: rgb(90, 90, 87);
+    background-color: #86a788;
     color: white;
  }
 
+/* Content */
 .card {
   background-color: rgb(228, 206, 80);
   transition: transform 0.5s ease;
@@ -47,10 +89,6 @@
   background-color: rgb(234, 202, 20);
 }
 
-body {
-  background-color: rgb(249, 249, 249);
-}
-
 .contentbackground {
   background-color: black;
 }
@@ -59,53 +97,10 @@ body {
   color: black;
 }
 
-body {
-      background-color: black; 
-}
 
-#bungkusInputanTable {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 40px; padding-bottom: 30px;
-    margin-top: 30px;
-}
-
-.form-floating input[type=text] {
-      border-radius: 6px;
-      border-color: #ced4da; 
-}
-
-.modal-header {
-     background-color: #0d6efd; 
-     color: #ffffff; 
-     border-bottom: none;
-}
-   
-.modal-footer .btn-secondary {
-    background-color: #6c757d; 
-}
-    
-.modal-body, .modal-content {
-    background-color: #ffffff; 
-}
-    
-.modal-body p {
-    color: #212529; 
-}
-
-.modal-body, .modal-content {
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
- }
-    
- .custom-modal .modal-dialog {
-      max-width: 450px; 
-}
-
+/* About us */
 .about-us {
   text-align: center;
-
 }
 
 .about-us-text {
@@ -122,34 +117,4 @@ body {
 
 .about-us-background {
 background-color: black;
-
-}
-
-.navbar-custom {
-  background-color: rgb(240, 207, 25); /* Yellow color */
-}
-
-.btn-custom {
-  background-color: rgb(240, 207, 25);
-}
-
-:root {
-  --bs-body-font-family: 'Josefin Sans', sans-serif;
-
-}
-
-body {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-/* Apply Josefin Sans font to specific elements */
-.navbar-brand,
-.navbar-nav,
-.nav-link,
-.modal-title,
-.modal-body,
-.modal-footer,
-.form-control,
-.btn {
-  font-family: 'Josefin Sans', sans-serif;
 }

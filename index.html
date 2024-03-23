@@ -54,55 +54,57 @@
   </nav>
 
     <!-- Data Table -->
-    <div id="bungkusInputanTable">
-      <div class="table-container px-5">
-        <table id="example" class="table table-striped" style="width: 100%;">
-          <thead>
-            <tr>
-              <th>NIM</th>
-              <th>Nama</th>
-              <th>Alamat</th>
-              <th>Pengaturan</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
-      </div>
-     
-      <!-- Inputan -->
-      <div id="bungkusInputan" class="mt-3 px-5 ">
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="floatingInputNIM"
-            placeholder="Nomor Induk Mahasiswa"
-          />
-          <label for="floatingInput">NIM</label>
+    <div class="px-3">
+      <div id="bungkusInputanTable">
+        <div class="table-container px-5">
+          <table id="example" class="table table-striped" style="width: 100%;">
+            <thead>
+              <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Pengaturan</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
         </div>
-  
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="floatingInputNama"
-            placeholder="Nama Lengkap"
-          />
-          <label for="floatingInput">Nama Lengkap</label>
+       
+        <!-- Inputan -->
+        <div id="bungkusInputan" class="px-5 ">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputNIM"
+              placeholder="Nomor Induk Mahasiswa"
+            />
+            <label for="floatingInput">NIM</label>
+          </div>
+    
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputNama"
+              placeholder="Nama Lengkap"
+            />
+            <label for="floatingInput">Nama Lengkap</label>
+          </div>
+    
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputAlamat"
+              placeholder="Alamat"
+            />
+            <label for="floatingPassword">Alamat</label>
+          </div>
+    
+            <!-- Add data -->
+          <button id="addBtn" class="btn btn-custom mt-3">Add Data</button>
         </div>
-  
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control"
-            id="floatingInputAlamat"
-            placeholder="Alamat"
-          />
-          <label for="floatingPassword">Alamat</label>
-        </div>
-  
-          <!-- Add data -->
-        <button id="addBtn" class="btn btn-custom mt-3">Add Data</button>
       </div>
     </div>
     
