@@ -9,6 +9,18 @@ $(document).ready(function() {
       let nim = $('#floatingInputNIM').val();
       let nama = $('#floatingInputNama').val();
       let alamat = $('#floatingInputAlamat').val();
+
+      if (!nim || !nama || !alamat) {
+        $('#warningNotification').modal('show');
+        return;
+      }
+
+      let existingNIMs = table.column(0).data().toArray();
+      if (existingNIMs.includes(nim)) {
+        $('#errorNotification').modal('show');
+        return;
+       }
+      
       let buttonsColumn = $('<div>')
             .append($('<button >', {
                 text: 'Edit', 

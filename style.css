@@ -11,7 +11,7 @@
 }
 
 .btn-custom {
-  background-color:#b2c8bb;
+  background-color:#b2c8bb !important;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .form-floating input[type=text] {
-    border-radius: 6px;
+    border-radius: 7px;
     border-color: #ced4da; 
 }
 
@@ -76,45 +76,44 @@ body {
 #example th {
     background-color: #86a788;
     color: white;
- }
+}
 
 /* Content */
+#bungkusAbout{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding: 40px;
+  height: 100%;
+
+}
+
 .card {
-  background-color: rgb(228, 206, 80);
-  transition: transform 0.5s ease;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
-.card:hover {
-  transform: scale(1.05); /* Increase size by 5% */
-  background-color: rgb(234, 202, 20);
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
-.contentbackground {
-  background-color: black;
+.card-body {
+  flex-grow: 1;
 }
 
-.card-title {
-  color: black;
+.card-img-top {
+  flex-shrink: 0;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-
-/* About us */
-.about-us {
-  text-align: center;
-}
-
-.about-us-text {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-  border: 2px solid #333;
-  padding: 10px;
-  display: inline-block;
-}
-
-.about-us-background {
-background-color: black;
+#bungkusVideo {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding: 40px;
+  height: 100%;
 }
