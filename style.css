@@ -28,7 +28,7 @@
   }
   
   #example tr:hover {
-    background-color: #ddd;
+    background-color: rgb(232, 211, 94);
   }
   
   #example th {
