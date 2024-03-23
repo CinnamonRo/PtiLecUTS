@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     let table = $('#example').DataTable({
         columnDefs: [
@@ -28,6 +27,8 @@ $(document).ready(function() {
       $('#floatingInputNIM').val('');
       $('#floatingInputNama').val('');
       $('#floatingInputAlamat').val('');
+          
+      $('#addModal').modal('show');
     } 
 
     //Add data
