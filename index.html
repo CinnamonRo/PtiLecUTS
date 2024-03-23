@@ -133,7 +133,7 @@
       </div>
     </div>
 
-    <!-- Modal Box For notificaition -->
+    <!-- Modal Box For Add Notificaition -->
     <div
       class="modal fade custom-modal"
       id="addModal"
@@ -145,7 +145,7 @@
         <div class="modal-content">
           <div class="modal-header bg-success">
             <h1 class="modal-title fs-5 text-white" id="ModalAddLabel">
-              Data Added Successfully
+              Student Added
             </h1>
             <button
               type="button"
@@ -155,17 +155,61 @@
             ></button>
           </div>
           <div class="modal-body">
-            <p>Your data has been successfully added to the system.</p>
+            <p>Student has been successfully added to the system.</p>
           </div>
-          <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box For Delete Notificaition -->
+    <div
+      class="modal fade custom-modal"
+      id="removeModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <h1 class="modal-title fs-5 text-white" id="ModalRemoveLabel">
+              Student Removed
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn-close btn-close-white"
               data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Student has been successfully remove to the system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box For Edit Notificaition -->
+    <div
+      class="modal fade custom-modal"
+      id="EditNotification"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: rgb(112, 196, 224);">
+            <h1 class="modal-title fs-5 text-white" id="ModalEditLabel">
+              Student Updated
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Student has been successfully remove to the system.</p>
           </div>
         </div>
       </div>

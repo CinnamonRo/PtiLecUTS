@@ -38,6 +38,8 @@ $(document).ready(function() {
     $('#example').on('click', 'button.btn-danger', function(){
         var row = $(this).closest('tr');
         table.row(row).remove().draw();
+
+        $('#removeModal').modal('show');
     });
 
     //Edit data
@@ -70,7 +72,8 @@ $(document).ready(function() {
       let updatedAlamat = $('#editInputAlamat').val();
 
       table.row(rowIndex).data([updatedNim, updatedNama, updatedAlamat, currentData.buttons]).draw();
-       $('#editModal').modal('hide');
+      $('#EditNotification').modal('show');
+      $('#editModal').modal('hide');
     });
 });
   
