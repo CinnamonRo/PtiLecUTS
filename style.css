@@ -9,4 +9,34 @@
 
 .nav-link:hover {
     color: #007bff; 
-}
+}   
+
+#example {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+  }
+  
+  #example th, #example td {
+    padding: 12px 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  #example tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #example tr:hover {
+    background-color: #ddd;
+  }
+  
+  #example th {
+    text-align: left;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+  }
+
+  
