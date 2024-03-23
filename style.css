@@ -8,43 +8,30 @@
 }
 
 .nav-link:hover {
-    color: #999542; 
+    color: rgb(167, 218, 235); 
 }   
 
 #example {
-    border-collapse: separate;
     border-spacing: 0 10px;
     border: 1px solid #ddd;
     overflow-x: auto;
   }
   
-  #example th, #example td {
-    padding: 12px 15px;
-    border-top: 1px solid #ddd;
-  }
+#example tr:hover {
+    background-color: rgb(167, 218, 235);
+}
   
-  #example tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #example tr:hover {
-    background-color: rgb(232, 211, 94);
-  }
-  
-  #example th {
-    text-align: left;
-    font-weight: bold;
-    background-color: rgb(7, 7, 5);
+#example th {
+    background-color: rgb(37, 37, 31);
     color: white;
-    padding: 10px 15px;
-  }
+ }
 
 .card {
-  background-color: rgb(232, 211, 94); /* Set card (placeholder) background color */
+  background-color: rgb(226, 211, 124);
 }
 
 body {
-  background-color: rgb(249, 249, 249); /* Set background color of the body */
+  background-color: rgb(249, 249, 249);
 }
 
 .contentbackground {
@@ -52,5 +39,50 @@ body {
 }
 
 .card-title {
-  color: black; /* Set title color */
+  color: black;
+}
+
+body {
+      background-color: #f8f9fa; 
+}
+
+.table-container,
+#bungkusInputan {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-floating input[type=text] {
+      border-radius: 6px;
+      border-color: #ced4da; 
+}
+
+.modal-header {
+     background-color: #0d6efd; 
+     color: #ffffff; 
+     border-bottom: none;
+}
+   
+.modal-footer .btn-secondary {
+    background-color: #6c757d; 
+}
+    
+.modal-body, .modal-content {
+    background-color: #ffffff; 
+}
+    
+.modal-body p {
+    color: #212529; 
+}
+
+.modal-body, .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+ }
+    
+ .custom-modal .modal-dialog {
+      max-width: 450px; 
 }
