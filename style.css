@@ -60,7 +60,7 @@ body {
 }
 
 body {
-      background-color: #f8f9fa; 
+      background-color: black; 
 }
 
 #bungkusInputanTable {
@@ -123,4 +123,12 @@ body {
 .about-us-background {
 background-color: black;
 
+}
+
+.navbar-custom {
+  background-color: rgb(240, 207, 25); /* Yellow color */
+}
+
+.btn-custom {
+  background-color: rgb(240, 207, 25);
 }
