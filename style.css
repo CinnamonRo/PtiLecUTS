@@ -109,15 +109,15 @@ body {
 }
 
 .about-us-text {
-  font-size: 2rem; /* Larger font size */
-  font-weight: bold; /* Bold font weight */
-  color: #333; /* Darker color */
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 2px; /* Spacing between letters */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-bottom: 30px;
-  border: 2px solid #333; /* Add border */
-  padding: 10px; /* Add padding */
-  display: inline-block; /* Ensure inline-block for border to work properly */
+  border: 2px solid #333;
+  padding: 10px;
+  display: inline-block;
 }
 
 .about-us-background {
