@@ -1,6 +1,18 @@
 .navbar {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6; /* Border color */
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6; 
+  font-weight: bold; 
+  padding: 10px 0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show .modal-content {
+  opacity: 1;
 }
 
 .nav-link {
@@ -14,15 +26,14 @@
 #example {
     border-spacing: 0 10px;
     border: 1px solid #ddd;
-    overflow-x: auto;
-  }
+}
   
 #example tr:hover {
     background-color: rgb(167, 218, 235);
 }
   
 #example th {
-    background-color: rgb(37, 37, 31);
+    background-color: rgb(90, 90, 87);
     color: white;
  }
 
@@ -46,13 +57,12 @@ body {
       background-color: #f8f9fa; 
 }
 
-.table-container,
-#bungkusInputan {
+#bungkusInputanTable {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px; padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 .form-floating input[type=text] {
