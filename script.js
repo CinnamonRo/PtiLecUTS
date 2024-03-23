@@ -21,6 +21,7 @@ $(document).ready(function() {
             .append($('<button>', {
                 text: 'Remove', 
                 class: 'btn btn-danger', 
+                'data-nim': nim,
             }));
 
     table.row.add([nim, nama, alamat, buttonsColumn.html()]).draw();
