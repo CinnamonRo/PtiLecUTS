@@ -1,9 +1,27 @@
 $(document).ready(function() {
-    let table = $('#example').DataTable({
-        columnDefs: [
-          { type: 'string', targets: 0 } 
-        ]
-      });
+    let table;
+
+    function saveTableDataToLocalStorage() {
+        let tableData = table.rows().data().toArray();
+        localStorage.setItem('tableData', JSON.stringify(tableData));
+    }
+
+    let storedData = localStorage.getItem('tableData');
+    if (storedData) {
+        table = $('#example').DataTable({
+            data: JSON.parse(storedData),
+            columnDefs: [
+                { type: 'string', targets: 0 }
+            ]
+        });
+    } else {
+        table = $('#example').DataTable({
+            columnDefs: [
+                { type: 'string', targets: 0 }
+            ]
+        });
+    }
+
 
     function addDataToTable() {
       let nim = $('#floatingInputNIM').val();
@@ -14,6 +32,14 @@ $(document).ready(function() {
         $('#warningNotification').modal('show');
         return;
       }
+
+      if (isNaN(parseInt(nim))) {
+        $('#floatingInputNIM').addClass('is-invalid');
+        return;
+      } else {
+        $('#floatingInputNIM').removeClass('is-invalid');
+      }
+
 
       let existingNIMs = table.column(0).data().toArray();
       if (existingNIMs.includes(nim)) {
@@ -42,6 +68,7 @@ $(document).ready(function() {
       $('#floatingInputAlamat').val('');
           
       $('#addModal').modal('show');
+      saveTableDataToLocalStorage();
     } 
 
     //Add data
@@ -53,6 +80,7 @@ $(document).ready(function() {
         table.row(row).remove().draw();
 
         $('#removeModal').modal('show');
+        saveTableDataToLocalStorage();
     });
 
     //Edit data
@@ -87,9 +115,18 @@ $(document).ready(function() {
       table.row(rowIndex).data([updatedNim, updatedNama, updatedAlamat, currentData.buttons]).draw();
       $('#EditNotification').modal('show');
       $('#editModal').modal('hide');
+      saveTableDataToLocalStorage();
     });
 });
 
-  
+let currentUrl = window.location.href;
+
+if (currentUrl.includes("index.html")) {
+    document.getElementById("homeLink").classList.add("active");
+} else if (currentUrl.includes("content.html")) {
+    document.getElementById("contentLink").classList.add("active");
+} else if (currentUrl.includes("about.html")) {
+    document.getElementById("aboutLink").classList.add("active");
+}
 
 
